@@ -11,3 +11,7 @@ git clone https://github.com/alfrejimglez/cloudflare-warp-installer.git
 cd cloudflare-warp-installer
 ./installer.sh
 sudo systemctl enable --now warp-svc.service
+warp-cli registration new
+warp-cli connect
+warp-cli disconnect
+

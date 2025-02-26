@@ -1,20 +1,13 @@
-simple script to download latest x86_64 deb package and install
-<br />
-I made it for a personal use since Cloudflare doesnt provide a packman package repository for ARCH family
-<br />
-and the current AUR package is outdated more than 3 versions already.
-<br />
-Instruction 
-<br />
-`git clone https://github.com/alfrejimglez/cloudflare-warp-installer.git)`<br />
-`cd cloudflare-warp-installer`<br />
-`./installer.sh`<br />
-`sudo systemctl enable --now warp-svc.service`<br />
-done<br />
-register new <br />
-`warp-cli registration new`<br />
-now you can start connection like<br />
-`warp-cli connect`<br />
-or<br />
-`warp-cli disconnect`<br />
+# Instalador de Cloudflare Warp para x86_64 (Debian)
 
+Este es un script simple para descargar e instalar automáticamente el último paquete `.deb` de Cloudflare Warp en sistemas `x86_64`.  
+
+Lo creé para uso personal, ya que Cloudflare no proporciona un repositorio de paquetes para la familia ARCH, y el paquete actual en AUR tiene un retraso de más de tres versiones.  
+
+## Instrucciones de instalación
+
+```sh
+git clone https://github.com/alfrejimglez/cloudflare-warp-installer.git
+cd cloudflare-warp-installer
+./installer.sh
+sudo systemctl enable --now warp-svc.service
